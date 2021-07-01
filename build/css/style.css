@@ -483,11 +483,10 @@ img {
 
 .container {
   margin: 0 auto;
-  padding-left: 98px;
-  padding-right: 98px; }
+  max-width: 1170px; }
   @media (max-width: 1023px) {
     .container {
-      max-width: none; } }
+      max-width: 678px; } }
   @media (max-width: 767px) {
     .container {
       padding-left: 15px;
@@ -518,6 +517,23 @@ body {
   margin-bottom: 37px;
   font-size: 14px;
   line-height: 21px; }
+  @media (max-width: 1023px) {
+    .page-header__top {
+      flex-wrap: wrap; }
+      .page-header__top--opened .page-header__toggle {
+        background-color: transparent; }
+        .page-header__top--opened .page-header__toggle::before, .page-header__top--opened .page-header__toggle::after {
+          width: 23px;
+          top: 22px;
+          left: 13px; }
+        .page-header__top--opened .page-header__toggle::after {
+          content: "";
+          position: absolute;
+          height: 2px;
+          transform: rotate(-45deg);
+          background-color: #1D1613; }
+        .page-header__top--opened .page-header__toggle::before {
+          transform: rotate(45deg); } }
 
 .page-header__search-svg {
   margin-right: 15px; }
@@ -532,6 +548,9 @@ body {
   align-self: center;
   margin-right: 345px;
   padding-bottom: 19px; }
+  @media (max-width: 1023px) {
+    .page-header__top form {
+      order: 4; } }
 
 .page-header__user {
   padding-bottom: 22px;
@@ -541,7 +560,7 @@ body {
   color: #1D1613; }
 
 .page-header__logo {
-  margin-right: 432px; }
+  margin-right: 429px; }
 
 .page-header__login {
   margin-right: 35px; }
@@ -590,5 +609,31 @@ body {
   font-weight: 400;
   font-style: italic;
   text-transform: lowercase; }
+
+.page-header__toggle {
+  display: none; }
+  @media (max-width: 1023px) {
+    .page-header__toggle {
+      display: block; } }
+  @media (max-width: 1023px) and (max-width: 1023px) {
+    .page-header__toggle {
+      display: block;
+      position: relative;
+      top: 0;
+      right: 0;
+      width: 50px;
+      height: 50px;
+      border: none;
+      background-color: transparent; }
+      .page-header__toggle::before {
+        content: "";
+        position: absolute;
+        top: 19px;
+        left: 14px;
+        width: 22px;
+        height: 2px;
+        background-color: #1D1613;
+        transition-property: transform, box-shadow, top;
+        transition-duration: 0.3s; } }
 
 /*# sourceMappingURL=style.css.map */

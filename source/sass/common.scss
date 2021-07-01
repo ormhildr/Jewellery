@@ -22,12 +22,12 @@
 
 .container {
   margin: 0 auto;
-  // max-width: 1170px;
-  padding-left: 98px;
-  padding-right: 98px;
+  max-width: 1170px;
+  // padding-left: 98px;
+  // padding-right: 98px;
 
   @media (max-width: $tablet-width-max) {
-    max-width: none;
+    max-width: 678px;
   }
 
   @media (max-width: $mobile-width-max) {
