@@ -1,0 +1,99 @@
+.page-header {
+  padding-top: 30px;
+}
+
+.page-header__top {
+  display: flex;
+  margin-bottom: 37px;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.page-header__search-svg {
+  margin-right: 15px;
+}
+
+.page-header__top input {
+  border: none;
+  outline: none;
+  color: $search-color;
+}
+
+.page-header__top form {
+  display: flex;
+  align-self: center;
+  margin-right: 345px;
+  padding-bottom: 19px;
+}
+
+.page-header__user {
+  padding-bottom: 22px;
+  align-self: center;
+}
+
+.page-header__user a {
+  color: $text-color;
+}
+
+.page-header__logo {
+  margin-right: 432px;
+}
+
+.page-header__login {
+  margin-right: 35px;
+}
+
+.page-header__nav {
+  padding-bottom: 19px;
+}
+
+.page-header__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  max-width: 493px;
+}
+
+.page-header__item a {
+  color: $text-color;
+}
+
+.page-header__item:not(:last-child) {
+  margin-right: 35px;
+}
+
+.page-header__bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 195px;
+  padding-bottom: 194px;
+  background-image: url("../img/header-main-desktop@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Cormorant Garamond", "Times", serif;
+  color: $white-color;
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/header-main-desktop@2x.jpg");
+  }
+}
+
+.page-header__bottom h2 {
+  margin: 0;
+  margin-bottom: 26px;
+  font-size: 45px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.page-header__bottom p {
+  margin: 0;
+  font-size: 38px;
+  font-weight: 400;
+  font-style: italic;
+  text-transform: lowercase;
+
+}
+

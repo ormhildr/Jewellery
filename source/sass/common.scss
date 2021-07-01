@@ -22,9 +22,9 @@
 
 .container {
   margin: 0 auto;
-  max-width: 1463px;
-  padding-left: 25px;
-  padding-right: 25px;
+  // max-width: 1170px;
+  padding-left: 98px;
+  padding-right: 98px;
 
   @media (max-width: $tablet-width-max) {
     max-width: none;
