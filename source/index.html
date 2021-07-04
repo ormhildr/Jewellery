@@ -18,9 +18,9 @@
 
 <body class="page">
 
-  <header class="page-header">
+  <header class="page-header page-header--opened page-header--closed-nojs page-header--nojs">
     <div class="container">
-      <div class="page-header__top page-header__top--opened page-header__top--closed-nojs page-header__top--nojs">
+      <div class="page-header__top">
         <button class="page-header__toggle" type="button" aria-label="Открыть меню"></button>
         <form action="#" method="POST">
           <svg class="page-header__search-svg" width="14" height="14" aria-label="Type here to search">
@@ -30,7 +30,9 @@
           <label class="visually-hidden" for="search-input">Поле поиска</label>
         </form>
         <a class="page-header__logo" href="">
-          <img src="img/logo.svg" alt="Jewellery" width="66" height="66">
+          <svg width="66" height="66" aria-label="Jewellery">
+            <use xlink:href="img/sprite.svg#icon-logo"></use>
+          </svg>
         </a>
         <div class="page-header__user">
           <a class="page-header__login" href="">Login</a>

@@ -1,5 +1,45 @@
 .page-header {
   padding-top: 30px;
+
+  @media (max-width: $tablet-width-max) {
+      &--opened {
+        // position: fixed;
+        // height: 100vh;
+        // overflow-y: scroll;
+        background-color: $mobile-header;
+
+        .page-header__logo {
+          margin-bottom: 40px;
+        }
+
+        .page-header__logo svg {
+          fill: $white-color;
+        }
+
+        .page-header__toggle {
+          background-color: transparent;
+
+          &::before,
+          &::after {
+            width: 23px;
+            top: 22px;
+            left: 13px;
+            background-color: $white-color;
+          }
+
+          &::after {
+            content: "";
+            position: absolute;
+            height: 2px;
+            transform: rotate(-45deg);
+          }
+
+          &::before {
+            transform: rotate(45deg);
+          }
+        }
+      }
+  }
 }
 
 .page-header__top {
@@ -10,35 +50,6 @@
 
   @media (max-width: $tablet-width-max) {
     flex-wrap: wrap;
-
-    &--opened {
-      // position: fixed;
-      // height: 100vh;
-      // overflow-y: scroll;
-
-      .page-header__toggle {
-        background-color: transparent;
-
-        &::before,
-        &::after {
-          width: 23px;
-          top: 22px;
-          left: 13px;
-        }
-
-        &::after {
-          content: "";
-          position: absolute;
-          height: 2px;
-          transform: rotate(-45deg);
-          background-color: $text-color;
-        }
-
-        &::before {
-          transform: rotate(45deg);
-        }
-      }
-    }
   }
 }
 
@@ -74,10 +85,36 @@
 
 .page-header__logo {
   margin-right: 429px;
+
+  @media (max-width: $tablet-width-max) {
+    margin: 0 auto;
+  }
+}
+
+.page-header__logo svg {
+  fill: $mobile-header;
 }
 
 .page-header__login {
   margin-right: 35px;
+
+  @media (max-width: $tablet-width-max) {
+    display: none;
+  }
+}
+
+.page-header__cart {
+  @media (max-width: $tablet-width-max) {
+    position: relative;
+    font-size: 0;
+
+    &::after {
+      position: relative;
+      content: url("../img/icon-cart.svg");
+      width: 18px;
+      height: 16px;
+    }
+  }
 }
 
 .page-header__nav {

@@ -511,6 +511,27 @@ body {
 
 .page-header {
   padding-top: 30px; }
+  @media (max-width: 1023px) {
+    .page-header--opened {
+      background-color: #a87b62; }
+      .page-header--opened .page-header__logo {
+        margin-bottom: 40px; }
+      .page-header--opened .page-header__logo svg {
+        fill: #ffffff; }
+      .page-header--opened .page-header__toggle {
+        background-color: transparent; }
+        .page-header--opened .page-header__toggle::before, .page-header--opened .page-header__toggle::after {
+          width: 23px;
+          top: 22px;
+          left: 13px;
+          background-color: #ffffff; }
+        .page-header--opened .page-header__toggle::after {
+          content: "";
+          position: absolute;
+          height: 2px;
+          transform: rotate(-45deg); }
+        .page-header--opened .page-header__toggle::before {
+          transform: rotate(45deg); } }
 
 .page-header__top {
   display: flex;
@@ -519,21 +540,7 @@ body {
   line-height: 21px; }
   @media (max-width: 1023px) {
     .page-header__top {
-      flex-wrap: wrap; }
-      .page-header__top--opened .page-header__toggle {
-        background-color: transparent; }
-        .page-header__top--opened .page-header__toggle::before, .page-header__top--opened .page-header__toggle::after {
-          width: 23px;
-          top: 22px;
-          left: 13px; }
-        .page-header__top--opened .page-header__toggle::after {
-          content: "";
-          position: absolute;
-          height: 2px;
-          transform: rotate(-45deg);
-          background-color: #1D1613; }
-        .page-header__top--opened .page-header__toggle::before {
-          transform: rotate(45deg); } }
+      flex-wrap: wrap; } }
 
 .page-header__search-svg {
   margin-right: 15px; }
@@ -561,9 +568,28 @@ body {
 
 .page-header__logo {
   margin-right: 429px; }
+  @media (max-width: 1023px) {
+    .page-header__logo {
+      margin: 0 auto; } }
+
+.page-header__logo svg {
+  fill: #a87b62; }
 
 .page-header__login {
   margin-right: 35px; }
+  @media (max-width: 1023px) {
+    .page-header__login {
+      display: none; } }
+
+@media (max-width: 1023px) {
+  .page-header__cart {
+    position: relative;
+    font-size: 0; }
+    .page-header__cart::after {
+      position: relative;
+      content: url("../img/icon-cart.svg");
+      width: 18px;
+      height: 16px; } }
 
 .page-header__nav {
   padding-bottom: 19px; }
