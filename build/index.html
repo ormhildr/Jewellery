@@ -18,46 +18,65 @@
 
 <body class="page">
 
-  <header class="page-header page-header--opened page-header--closed-nojs page-header--nojs">
-    <div class="container">
-      <div class="page-header__top">
-        <button class="page-header__toggle" type="button" aria-label="Открыть меню"></button>
-        <form action="#" method="POST">
-          <svg class="page-header__search-svg" width="14" height="14" aria-label="Type here to search">
-            <use xlink:href="img/sprite.svg#icon-search"></use>
-          </svg>
-          <input class="search" type="search" name="search" id="search-input" placeholder="Type here to search">
-          <label class="visually-hidden" for="search-input">Поле поиска</label>
-        </form>
-        <a class="page-header__logo" href="">
-          <svg width="66" height="66" aria-label="Jewellery">
-            <use xlink:href="img/sprite.svg#icon-logo"></use>
-          </svg>
-        </a>
-        <div class="page-header__user">
-          <a class="page-header__login" href="">Login</a>
-          <a class="page-header__cart" href="">Cart 0</a>
+  <header class="page-header">
+    <div class="page-header__inner page-header__inner--closed page-header__inner--closed-nojs page-header__inner--nojs">
+      <div class="container">
+        <div class="page-header__top">
+          <button class="page-header__toggle" type="button" aria-label="Открыть меню"></button>
+          <form action="#" method="POST">
+            <a class="page-header__search" href="">
+              <svg width="14" height="14" aria-label="Type here to search">
+                <use xlink:href="img/sprite.svg#icon-search"></use>
+              </svg>
+            </a>
+            <input type="search" name="search" id="search-input" placeholder="Type here to search">
+            <label class="visually-hidden" for="search-input">Поле поиска</label>
+          </form>
+          <a class="page-header__logo" href="">
+            <svg width="66" height="66" aria-label="Jewellery">
+              <use xlink:href="img/sprite.svg#icon-logo"></use>
+            </svg>
+          </a>
+          <div class="page-header__user">
+            <a class="page-header__login" href="">Login</a>
+            <a class="page-header__cart" href="">
+              <svg width="20" height="18" aria-label="Корзина">
+                <use xlink:href="img/sprite.svg#icon-cart"></use>
+              </svg>Cart 0</a>
+          </div>
         </div>
+        <nav class="page-header__nav">
+          <ul class="page-header__list list">
+            <li class="page-header__item">
+              <a href="">What’s new</a>
+            </li>
+            <li class="page-header__item">
+              <a href="">Chokers</a>
+            </li>
+            <li class="page-header__item">
+              <a href="">Necklaces</a>
+            </li>
+            <li class="page-header__item">
+              <a href="">Rings</a>
+            </li>
+            <li class="page-header__item">
+              <a href="">Earrings</a>
+            </li>
+          </ul>
+          <ul class="page-header__sub-nav page-header__sub-elements list">
+            <li class="page-header__sub-item">
+              <a href="">About CH</a>
+            </li>
+            <li class="page-header__sub-item">
+              <a href="">Stores & Hours</a>
+            </li>
+            <li class="page-header__sub-item">
+              <a href="">Contact Us</a>
+            </li>
+          </ul>
+          <a class="page-header__sub-login page-header__sub-elements" href="">Login</a>
+        </nav>
       </div>
-      <nav class="page-header__nav">
-        <ul class="page-header__list list">
-          <li class="page-header__item">
-            <a href="">What’s new</a>
-          </li>
-          <li class="page-header__item">
-            <a href="">Chokers</a>
-          </li>
-          <li class="page-header__item">
-            <a href="">Necklaces</a>
-          </li>
-          <li class="page-header__item">
-            <a href="">Rings</a>
-          </li>
-          <li class="page-header__item">
-            <a href="">Earrings</a>
-          </li>
-        </ul>
-      </nav>
     </div>
     <div class="page-header__bottom">
       <h2>Perfection</h2>
