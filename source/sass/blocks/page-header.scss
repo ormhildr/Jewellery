@@ -300,6 +300,7 @@
   background-size: cover;
   font-family: "Cormorant Garamond", "Times", serif;
   color: $white-color;
+  background-color: $mobile-header;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/header-main-desktop@2x.jpg");
