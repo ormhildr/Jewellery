@@ -959,4 +959,81 @@ body {
   .page-footer__link--twitter::before {
     background-image: url("../img/icon-twitter.svg"); }
 
+.page-section h2 {
+  margin: 0;
+  font-family: "Cormorant Garamond", "Times", serif;
+  font-size: 34px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-align: center; }
+
+.page-section__link {
+  display: block;
+  max-width: -webkit-max-content;
+  max-width: -moz-max-content;
+  max-width: max-content;
+  margin: 0 auto;
+  color: #1D1613;
+  border-bottom: 1px solid #a87b62; }
+
+.new-products {
+  position: relative;
+  padding-top: 130px; }
+
+.new-products h2 {
+  margin-bottom: 31px; }
+
+.new-products__link {
+  margin-bottom: 60px; }
+
+.new-products__list {
+  display: flex; }
+
+.new-products__item {
+  text-align: center; }
+  .new-products__item:not(:last-child) {
+    margin-right: 30px; }
+
+.new-products__img {
+  display: block;
+  margin-bottom: 20px; }
+
+.new-products__item-title {
+  color: #1D1613; }
+
+.new-products__item-price {
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px; }
+
+.new-products__button {
+  position: absolute;
+  top: 22%;
+  background-color: transparent;
+  border: none;
+  z-index: 100;
+  cursor: pointer; }
+  .new-products__button::after {
+    content: "";
+    position: absolute;
+    width: 29px;
+    height: 10px;
+    background-image: url("../img/icon-swiper-arrow.svg");
+    background-repeat: no-repeat; }
+  .new-products__button--next {
+    right: 0;
+    left: auto; }
+    .new-products__button--next::after {
+      right: 0; }
+  .new-products__button--prev::after {
+    transform: scale(-1, 1);
+    left: 0; }
+
+.swiper-container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  z-index: 1; }
+
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,16 @@
+.page-section h2 {
+  margin: 0;
+  font-family: "Cormorant Garamond", "Times", serif;
+  font-size: 34px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-align: center;
+}
+
+.page-section__link {
+  display: block;
+  max-width: max-content;
+  margin: 0 auto;
+  color: $text-color;
+  border-bottom: 1px solid $mobile-header;
+}
