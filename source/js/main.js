@@ -1,5 +1,7 @@
 'use strict';
 
+import Swiper from './vendor.js';
+
 const body = document.body;
 const navMain = document.querySelector(`.page-header__inner`);
 const navToggle = navMain.querySelector(`.page-header__toggle`);
@@ -20,3 +22,19 @@ if (navMain !== null) {
     }
   });
 }
+
+var swiper = new Swiper(".mySwiper", {
+  slidesPerView: 3,
+  spaceBetween: 30,
+  slidesPerGroup: 3,
+  loop: true,
+  loopFillGroupWithBlank: true,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+});

@@ -978,7 +978,8 @@ body {
 
 .new-products {
   position: relative;
-  padding-top: 130px; }
+  padding-top: 130px;
+  padding-bottom: 65px; }
 
 .new-products h2 {
   margin-bottom: 31px; }
@@ -987,7 +988,8 @@ body {
   margin-bottom: 60px; }
 
 .new-products__list {
-  display: flex; }
+  display: flex;
+  margin-bottom: 50px; }
 
 .new-products__item {
   text-align: center; }
@@ -1028,6 +1030,12 @@ body {
   .new-products__button--prev::after {
     transform: scale(-1, 1);
     left: 0; }
+
+.new-products__pagination {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 120px; }
 
 .swiper-container {
   width: 100%;
