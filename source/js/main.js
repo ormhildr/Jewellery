@@ -1,5 +1,3 @@
-'use strict';
-
 import Swiper from './vendor.js';
 
 const body = document.body;
@@ -38,3 +36,5 @@ var swiper = new Swiper(".mySwiper", {
     prevEl: ".swiper-button-prev",
   },
 });
+
+window.swiper = swiper;
