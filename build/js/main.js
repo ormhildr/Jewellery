@@ -1,5 +1,3 @@
-'use strict';
-
 import Swiper from './vendor.js';
 
 const body = document.body;
@@ -23,18 +21,23 @@ if (navMain !== null) {
   });
 }
 
-var swiper = new Swiper(".mySwiper", {
-  slidesPerView: 3,
+let swiper = new Swiper(`.swiper`, {
+  slidesPerView: 2,
   spaceBetween: 30,
-  slidesPerGroup: 3,
+  slidesPerGroup: 4,
   loop: true,
   loopFillGroupWithBlank: true,
   pagination: {
-    el: ".swiper-pagination",
+    el: `.swiper-pagination`,
     clickable: true,
+    renderBullet(index, className) {
+      return `<span class="` + className + `">` + (index + 1) + `</span>`;
+    }
   },
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: `.swiper-button-next`,
+    prevEl: `.swiper-button-prev`,
   },
 });
+
+window.swiper = swiper;
