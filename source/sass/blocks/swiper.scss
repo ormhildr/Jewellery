@@ -4,6 +4,10 @@
   margin-right: auto;
   overflow: hidden;
   z-index: 1;
+
+  @media (max-width: $mobile-width-max) {
+    max-width: 290px;
+  }
 }
 
 .swiper-pagination-bullet {

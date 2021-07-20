@@ -22,22 +22,51 @@ if (navMain !== null) {
 }
 
 let swiper = new Swiper(`.swiper`, {
-  slidesPerView: 2,
   spaceBetween: 30,
-  slidesPerGroup: 4,
-  loop: true,
-  loopFillGroupWithBlank: true,
   pagination: {
     el: `.swiper-pagination`,
-    clickable: true,
-    renderBullet(index, className) {
-      return `<span class="` + className + `">` + (index + 1) + `</span>`;
+    clickable: true
+  },
+  breakpoints: {
+    320: {
+      slidesPerView: 2,
+      slidesPerGroup: 2,
+      pagination: {
+        type: `fraction`,
+        renderFraction(currentClass, totalClass) {
+          return `<span class="` + currentClass + `"></span>` +
+            ` of ` +
+            `<span class="` + totalClass + `"></span>`;
+        }
+      }
+    },
+    768: {
+      slidesPerView: 2,
+      slidesPerGroup: 2,
+      pagination: {
+        type: `bullets`,
+        renderBullet(index, className) {
+          return `<span class="` + className + `">` + (index + 1) + `</span>`;
+        }
+      }
+    },
+    1024: {
+      slidesPerView: 4,
+      slidesPerGroup: 4,
+      pagination: {
+        type: `bullets`,
+        renderBullet(index, className) {
+          return `<span class="` + className + `">` + (index + 1) + `</span>`;
+        }
+      }
     }
   },
+  loop: true,
+  loopFillGroupWithBlank: true,
   navigation: {
     nextEl: `.swiper-button-next`,
     prevEl: `.swiper-button-prev`,
-  },
+  }
 });
 
 window.swiper = swiper;
