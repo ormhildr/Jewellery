@@ -1,0 +1,138 @@
+.blog {
+  padding-top: 57px;
+  padding-bottom: 80px;
+
+  @media (max-width: $tablet-width-max) {
+    padding-top: 9px;
+  }
+}
+
+.blog h2 {
+  margin-bottom: 28px;
+}
+
+.blog__description {
+  margin-bottom: 62px;
+}
+
+.blog__wrapper {
+  display: grid;
+  grid-template-columns: 570px 570px;
+  grid-template-rows: 300px 300px;
+  gap: 30px;
+
+  @media (max-width: $tablet-width-max) {
+    grid-template-columns: auto;
+    gap: 50px;
+  }
+}
+
+.blog__article {
+  display: flex;
+  flex-direction: column;
+  background-color: $blog-background-color;
+  background-size: contain;
+
+  @media (max-width: $tablet-width-max) {
+    background-size: cover;
+  }
+
+  &--care {
+    align-items: flex-end;
+
+    @include bg-image("jess-harper-sunday-blog-care-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/jess-harper-sunday-blog-care-desktop@2x.jpg");
+    }
+
+    @media (max-width: $tablet-width-max) {
+      order: -2;
+    }
+  }
+
+  &--power {
+    @include bg-image("alex-holyoake-Cg0dPdmy5dE-unsplash-blog-power-desktop.jpg");
+    background-position: right;
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/alex-holyoake-Cg0dPdmy5dE-unsplash-blog-power-desktop@2x.jpg");
+    }
+
+    @media (max-width: $tablet-width-max) {
+      order: -1;
+    }
+  }
+
+  &--trends {
+    grid-row: 1/3;
+    grid-column: 2/3;
+    align-items: flex-end;
+    justify-content: flex-end;
+
+    @media (max-width: $tablet-width-max) {
+      grid-row: auto;
+      grid-column: auto;
+    }
+
+    @include bg-image("alve-odonnell-RP4_f4zu_8A-unsplash-blog-trends-desktop.jpg");
+
+    @media (min-resolution: 2dppx) {
+      background-image: url("../img/alve-odonnell-RP4_f4zu_8A-unsplash-blog-trends-desktop@2x.jpg");
+    }
+
+    .blog__inner {
+      height: 300px;
+    }
+  }
+}
+
+.blog__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 50%;
+  height: 100%;
+  padding-top: 64px;
+  background-color: inherit;
+
+  h3 {
+    margin: 0;
+    margin-bottom: 38px;
+    padding-right: 60px;
+    padding-left: 60px;
+    font-family: "Cormorant Garamond", "Times", serif;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 26px;
+    line-height: 130%;
+  }
+
+  @media (max-width: $tablet-width-max) {
+    &--care {
+      h3 {
+        padding-right: 70px;
+        padding-left: 70px;
+      }
+    }
+
+    &--power {
+      h3 {
+        padding-right: 90px;
+        padding-left: 90px;
+      }
+    }
+
+    &--trends {
+      padding-top: 81px;
+    }
+  }
+}
+
+.blog__inner p {
+  margin: 0;
+  margin-bottom: 11px;
+  font-size: 14px;
+  color: $search-color;
+}
