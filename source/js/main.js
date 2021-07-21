@@ -1,8 +1,11 @@
 import Swiper from './vendor.js';
 
 const body = document.body;
+
 const navMain = document.querySelector(`.page-header__inner`);
 const navToggle = navMain.querySelector(`.page-header__toggle`);
+
+const faqLinks = document.querySelectorAll(`.page-faq__link`);
 
 if (navMain !== null) {
   navMain.classList.remove(`page-header__inner--nojs`);
@@ -18,6 +21,20 @@ if (navMain !== null) {
     if (navMain.classList.contains(`page-header__inner--closed`)) {
       body.style.overflow = `visible`;
     }
+  });
+}
+
+if (faqLinks !== null) {
+  Array.from(faqLinks).forEach((link) => {
+    link.classList.remove(`page-faq__link--opened`);
+    link.classList.remove(`page-faq__link--opened-nojs`);
+    link.classList.add(`page-faq__link--closed`);
+
+    link.addEventListener(`click`, (evt) => {
+      evt.preventDefault();
+      link.classList.toggle(`page-faq__link--opened`);
+      link.classList.toggle(`page-faq__link--closed`);
+    });
   });
 }
 
