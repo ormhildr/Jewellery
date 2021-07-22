@@ -1,10 +1,19 @@
 .page-faq {
   padding-top: 50px;
   padding-bottom: 50px;
+
+  @media (max-width: $tablet-width-max) {
+    padding-top: 0;
+  }
 }
 
 .page-faq h2 {
   margin-bottom: 58px;
+
+  @media (max-width: $mobile-width-max) {
+    margin-bottom: 31px;
+    line-height: 124%;
+  }
 }
 
 .page-faq__list {
@@ -38,6 +47,16 @@
     p {
       display: block;
     }
+
+    @media (max-width: $mobile-width-max) {
+      padding-top: 14px;
+      padding-right: 13%;
+      padding-bottom: 21px;
+
+      h3 {
+        padding-right: 43px;
+      }
+    }
   }
 
   &--opened-nojs {
@@ -59,11 +78,34 @@
       right: 48px;
       transform: scale(1, -1)
     }
+
+    @media (max-width: $tablet-width-max) {
+      padding-bottom: 18px;
+    }
+
+    @media (max-width: $mobile-width-max) {
+      padding-top: 17px;
+      padding-right: 22%;
+      padding-bottom: 2px;
+    }
   }
 
   &--closed-nojs {
     p {
       display: none;
+    }
+  }
+
+  @media (max-width: $tablet-width-max) {
+    padding-left: 49px;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    padding-left: 24px;
+
+    &::after {
+      top: 16px;
+      right: 26px;
     }
   }
 }
@@ -73,6 +115,15 @@
   margin-bottom: 6px;
   font-size: 18px;
   color: $text-color;
+
+  @media (max-width: $tablet-width-max) {
+    margin-bottom: 25px;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    margin-bottom: 14px;
+    font-size: 16px;
+  }
 }
 
 .page-faq__link p {
@@ -80,4 +131,14 @@
   padding-left: 5px;
   line-height: 130%;
   color: $text-color;
+
+  @media (max-width: $tablet-width-max) {
+    padding-left: 0;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    padding-right: 19px;
+    font-size: 14px;
+    line-height: 140%;
+  }
 }
