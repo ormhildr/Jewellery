@@ -172,49 +172,59 @@
     font-size: 0;
   }
 
-  &::before {
-    content: "";
-    position: absolute;
-    width: 15px;
-    height: 15px;
-    top: 3px;
-    left: -30px;
-    background-repeat: no-repeat;
-    background-size:contain;
-
-    @media (max-width: $mobile-width-max) {
-      width: 20px;
-      height: 21px;
-      left: 0;
-    }
-  }
-
-  &--fb {
+  a {
     &::before {
-      background-image: url("../img/icon-fb.svg");
-      left: -26px;
+      content: "";
+      position: absolute;
+      width: 15px;
+      height: 15px;
+      top: 3px;
+      left: -30px;
+      background-repeat: no-repeat;
+      background-size:contain;
 
       @media (max-width: $mobile-width-max) {
+        width: 20px;
+        height: 21px;
         left: 0;
       }
     }
   }
 
+  &--fb {
+    a {
+      &::before {
+        background-image: url("../img/icon-fb.svg");
+        left: -26px;
+
+        @media (max-width: $mobile-width-max) {
+          left: 0;
+        }
+      }
+    }
+  }
+
   &--instagram {
-    &::before {
-      background-image: url("../img/icon-inst.svg");
+    a {
+      &::before {
+        background-image: url("../img/icon-inst.svg");
+      }
     }
   }
 
   &--pinterest {
-    &::before {
-      background-image: url("../img/icon-pinterest.svg");
+    a {
+      &::before {
+        background-image: url("../img/icon-pinterest.svg");
+      }
     }
   }
 
   &--twitter {
-    &::before {
-      background-image: url("../img/icon-twitter.svg");
+    a {
+      &::before {
+        background-image: url("../img/icon-twitter.svg");
+      }
     }
   }
 }

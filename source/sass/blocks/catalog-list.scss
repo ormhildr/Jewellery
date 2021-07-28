@@ -1,0 +1,42 @@
+.catalog-list {
+  display: flex;
+}
+
+.catalog-list__item {
+  text-align: center;
+
+  @media (max-width: $mobile-width-max) {
+    width: 130px;
+  }
+}
+
+.catalog-list__item a {
+  display: block;
+}
+
+.catalog-list__item img {
+  display: block;
+  margin-bottom: 20px;
+
+  @media (max-width: $tablet-width-max) {
+    width: 325px;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    width: 130px;
+    margin-bottom: 14px;
+  }
+}
+
+.catalog-list__item h3 {
+  margin: 0;
+  font-size: 16px;
+  color: $text-color;
+}
+
+.catalog-list__item p {
+  margin: 0;
+  font-weight: 700;
+  font-size: 14px;
+  color: $text-color;
+}

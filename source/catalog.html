@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Jewellery">
+  <title>Jewellery</title>
+  <link rel="icon" href="img/favicon.png" type="image/png" sizes="32x32">
+  <link rel="preload" href="fonts/cormorant-garamond-v10-latin-regular.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/cormorant-garamond-v10-latin-italic.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/cormorant-garamond-v10-latin-600.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/cormorant-garamond-v10-latin-700.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/poppins-v15-latin-regular.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/poppins-v15-latin-500.woff2" as="font" crossorigin>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body class="page">
+
+  <header class="page-header">
+    <div class="page-header__inner page-header__inner--closed page-header__inner--closed-nojs page-header__inner--nojs">
+      <div class="container">
+        <div class="page-header__top">
+          <button class="page-header__toggle" type="button" aria-label="Открыть меню"></button>
+          <form action="#" method="POST">
+            <a class="page-header__search" href="">
+              <svg width="14" height="14" aria-label="Type here to search">
+                <use xlink:href="img/sprite.svg#icon-search"></use>
+              </svg>
+            </a>
+            <input type="search" name="search" id="search-input" placeholder="Type here to search">
+            <label class="visually-hidden" for="search-input">Поле поиска</label>
+          </form>
+          <a class="page-header__logo" href="index.html">
+            <svg width="66" height="66" aria-label="Jewellery">
+              <use xlink:href="img/sprite.svg#icon-logo"></use>
+            </svg>
+          </a>
+          <div class="page-header__user">
+            <a class="page-header__login" href="">Login</a>
+            <a class="page-header__cart" href="">
+              <svg width="20" height="18" aria-label="Корзина">
+                <use xlink:href="img/sprite.svg#icon-cart"></use>
+              </svg>Cart 0</a>
+          </div>
+        </div>
+        <nav class="page-header__nav">
+          <ul class="page-header__list list">
+            <li class="page-header__item">
+              <a href="">What’s new</a>
+            </li>
+            <li class="page-header__item">
+              <a href="">Chokers</a>
+            </li>
+            <li class="page-header__item">
+              <a href="">Necklaces</a>
+            </li>
+            <li class="page-header__item">
+              <a href="">Rings</a>
+            </li>
+            <li class="page-header__item">
+              <a href="">Earrings</a>
+            </li>
+          </ul>
+          <ul class="page-header__sub-nav page-header__sub-elements list">
+            <li class="page-header__sub-item">
+              <a href="">About CH</a>
+            </li>
+            <li class="page-header__sub-item">
+              <a href="">Stores & Hours</a>
+            </li>
+            <li class="page-header__sub-item">
+              <a href="">Contact Us</a>
+            </li>
+          </ul>
+          <a class="page-header__sub-login page-header__sub-elements" href="">Login</a>
+        </nav>
+      </div>
+    </div>
+    <div class="page-header__bottom page-header__bottom-catalog">
+      <h2>All Jewellery</h2>
+      <p>Discover picks of fashion's finest trends in our jewellery catalog</p>
+    </div>
+  </header>
+
+  <main class="page__main">
+    <section class="page-catalog">
+      <div class="container page-catalog__container">
+        <button class="page-catalog__filter-button page-catalog__summon-button" type="button">Filter</button>
+        <div class="page-catalog__filter">
+          <form action="URL" method="GET">
+            <div class="page-catalog__filter-main">
+              <div
+                class="page-catalog__filter-fieldset page-catalog__filter-fieldset--opened page-catalog__filter-fieldset--opened-nojs">
+                <h3 class="page-catalog__filter-title" tabindex="0">Product</h3>
+                <ul class="page-catalog__filter-list list">
+                  <li class="page-catalog__filter-option page-catalog__filter-option--checkbox">
+                    <input class="visually-hidden" type="checkbox" name="Necklaces" id="Necklaces" checked>
+                    <label for="Necklaces">Necklaces</label>
+                  </li>
+                  <li class="page-catalog__filter-option page-catalog__filter-option--checkbox">
+                    <input class="visually-hidden" type="checkbox" name="Chokers" id="Chokers" checked>
+                    <label for="Chokers">Chokers</label>
+                  </li>
+                  <li class="page-catalog__filter-option page-catalog__filter-option--checkbox">
+                    <input class="visually-hidden" type="checkbox" name="Rings" id="Rings">
+                    <label for="Rings">Rings</label>
+                  </li>
+                  <li class="page-catalog__filter-option page-catalog__filter-option--checkbox">
+                    <input class="visually-hidden" type="checkbox" name="Earrings" id="Earrings" checked>
+                    <label for="Earrings">Earrings</label>
+                  </li>
+                </ul>
+              </div>
+              <div
+                class="page-catalog__filter-fieldset page-catalog__filter-fieldset--opened page-catalog__filter-fieldset--opened-nojs">
+                <h3 class="page-catalog__filter-title" tabindex="0">Material</h3>
+                <ul class="page-catalog__filter-list list">
+                  <li class="page-catalog__filter-option page-catalog__filter-option--checkbox">
+                    <input class="visually-hidden" type="checkbox" name="Gold" id="Gold" checked>
+                    <label for="Gold">Gold</label>
+                  </li>
+                  <li class="page-catalog__filter-option page-catalog__filter-option--checkbox">
+                    <input class="visually-hidden" type="checkbox" name="Silver" id="Silver" checked>
+                    <label for="Silver">Silver</label>
+                  </li>
+                </ul>
+              </div>
+              <div
+                class="page-catalog__filter-fieldset page-catalog__filter-fieldset--opened page-catalog__filter-fieldset--opened-nojs">
+                <h3 class="page-catalog__filter-title" tabindex="0">Collection</h3>
+                <ul class="page-catalog__filter-list list">
+                  <li class="page-catalog__filter-option page-catalog__filter-option--checkbox">
+                    <input class="visually-hidden" type="checkbox" name="Pink flamingo" id="Flamingo" checked>
+                    <label for="Flamingo">Pink flamingo</label>
+                  </li>
+                  <li class="page-catalog__filter-option page-catalog__filter-option--checkbox">
+                    <input class="visually-hidden" type="checkbox" name="Dreams" id="Dreams" checked>
+                    <label for="Dreams">Dreams</label>
+                  </li>
+                </ul>
+              </div>
+              <div
+                class="page-catalog__filter-fieldset page-catalog__filter-fieldset--opened page-catalog__filter-fieldset--opened-nojs">
+                <h3 class="page-catalog__filter-title" tabindex="0">Price</h3>
+                <div class="page-catalog__filter-scale page-catalog__filter-list">
+                  <div class="page-catalog__filter-bar">
+                  </div>
+                  <div class="page-catalog__filter-toggle page-catalog__filter-toggle--min" tabindex="0"
+                    aria-label="from 55$">$ 55</div>
+                  <div class="page-catalog__filter-toggle page-catalog__filter-toggle--max" tabindex="0"
+                    aria-label="155$">$ 155</div>
+                </div>
+              </div>
+            </div>
+            <button class="page-catalog__filter-button page-catalog__filter-button--apply" type="submit">Apply</button>
+            <button class="page-catalog__filter-button page-catalog__filter-button--clear" type="button">Clear
+              All</button>
+          </form>
+        </div>
+        <ul class="catalog-list page-catalog__list list">
+          <li class="catalog-list__item page-catalog__item">
+            <a href="">
+              <picture>
+                <source type="image/webp"
+                  srcset="img/double-pearl-earrings-desktop@1x.webp 1x, img/double-pearl-earrings-desktop@2x.webp 2x">
+                <img src="img/double-pearl-earrings-desktop@1x.jpg" srcset="img/double-pearl-earrings-desktop@2x.jpg 2x"
+                  alt="Double pearl earrings" width="270" height="272">
+              </picture>
+              <h3>Double pearl earrings</h3>
+              <p>$ 115</p>
+            </a>
+          </li>
+          <li class="catalog-list__item page-catalog__item">
+            <a href="">
+              <picture>
+                <source type="image/webp"
+                  srcset="img/black-choker-gold-bead-desktop@1x.webp 1x, img/black-choker-gold-bead-desktop@2x.webp 2x">
+                <img src="img/black-choker-gold-bead-desktop@1x.jpg"
+                  srcset="img/black-choker-gold-bead-desktop@2x.jpg 2x" alt="Choker with gold bead" width="270"
+                  height="272">
+              </picture>
+              <h3>Choker with gold bead</h3>
+              <p>$ 55</p>
+            </a>
+          </li>
+          <li class="catalog-list__item page-catalog__item">
+            <a href="">
+              <picture>
+                <source type="image/webp"
+                  srcset="img/gold-layered-necklace-desktop@1x.webp 1x, img/gold-layered-necklace-desktop@2x.webp 2x">
+                <img src="img/gold-layered-necklace-desktop@1x.jpg" srcset="img/gold-layered-necklace-desktop@2x.jpg 2x"
+                  alt="Gold layered necklace" width="270" height="272">
+              </picture>
+              <h3>Gold layered necklace</h3>
+              <p>$ 155</p>
+            </a>
+          </li>
+          <li class="catalog-list__item page-catalog__item">
+            <a href="">
+              <picture>
+                <source type="image/webp"
+                  srcset="img/blue-gemstone-pendant-desktop@1x.webp 1x, img/blue-gemstone-pendant-desktop@2x.webp 2x">
+                <img src="img/blue-gemstone-pendant-desktop@1x.jpg" srcset="img/blue-gemstone-pendant-desktop@2x.jpg 2x"
+                  alt="Galaxy earrings" width="270" height="272">
+              </picture>
+              <h3>Blue gemstone pendant</h3>
+              <p>$ 105</p>
+            </a>
+          </li>
+          <li class="catalog-list__item page-catalog__item">
+            <a href="">
+              <picture>
+                <source type="image/webp"
+                  srcset="img/boho-earrings-desktop@1x.webp 1x, img/boho-earrings-desktop@2x.webp 2x">
+                <img src="img/boho-earrings-desktop@1x.jpg" srcset="img/boho-earrings-desktop@2x.jpg 2x"
+                  alt="Boho earrings" width="270" height="272">
+              </picture>
+              <h3>Boho earrings</h3>
+              <p>$ 75</p>
+            </a>
+          </li>
+          <li class="catalog-list__item page-catalog__item">
+            <a href="">
+              <picture>
+                <source type="image/webp"
+                  srcset="img/bird-necklace-desktop@1x.webp 1x, img/bird-necklace-desktop@2x.webp 2x">
+                <img src="img/bird-necklace-desktop@1x.jpg" srcset="img/bird-necklace-desktop@2x.jpg 2x"
+                  alt="Gold bird necklace" width="270" height="272">
+              </picture>
+              <h3>Gold bird necklace</h3>
+              <p>$ 135</p>
+            </a>
+          </li>
+          <li class="catalog-list__item page-catalog__item">
+            <a href="">
+              <picture>
+                <source type="image/webp"
+                  srcset="img/black-leather-choker-necklace-desktop@1x.webp 1x, img/black-leather-choker-necklace-desktop@2x.webp 2x">
+                <img src="img/black-leather-choker-necklace-desktop@1x.jpg"
+                  srcset="img/black-leather-choker-necklace-desktop@2x.jpg 2x" alt="Black leather choker" width="270"
+                  height="272">
+              </picture>
+              <h3>Black leather choker</h3>
+              <p>$ 85</p>
+            </a>
+          </li>
+          <li class="catalog-list__item page-catalog__item">
+            <a href="">
+              <picture>
+                <source type="image/webp"
+                  srcset="img/purple-gemstone-necklace-desktop@1x.webp 1x, img/purple-gemstone-necklace-desktop@2x.webp 2x">
+                <img src="img/purple-gemstone-necklace-desktop@1x.jpg"
+                  srcset="img/purple-gemstone-necklace-desktop@2x.jpg 2x" alt="Necklace with amethyst" width="270"
+                  height="272">
+              </picture>
+              <h3>Necklace with amethyst</h3>
+              <p>$ 145</p>
+            </a>
+          </li>
+          <li class="catalog-list__item page-catalog__item">
+            <a href="">
+              <picture>
+                <source type="image/webp"
+                  srcset="img/elephant-earring-desktop@1x.webp 1x, img/elephant-earring-desktop@2x.webp 2x">
+                <img src="img/elephant-earring-desktop@1x.jpg" srcset="img/elephant-earring-desktop@2x.jpg 2x"
+                  alt="Elephant earrings" width="270" height="272">
+              </picture>
+              <h3>Elephant earrings</h3>
+              <p>$ 95</p>
+            </a>
+          </li>
+          <li class="catalog-list__item page-catalog__item">
+            <a href="">
+              <picture>
+                <source type="image/webp"
+                  srcset="img/threader-necklace-closeup-desktop@1x.webp 1x, img/threader-necklace-closeup-desktop@2x.webp 2x">
+                <img src="img/threader-necklace-closeup-desktop@1x.jpg"
+                  srcset="img/threader-necklace-closeup-desktop@2x.jpg 2x" alt="Threader necklace" width="270"
+                  height="272">
+              </picture>
+              <h3>Threader necklace</h3>
+              <p>$ 115</p>
+            </a>
+          </li>
+          <li class="catalog-list__item page-catalog__item">
+            <a href="">
+              <picture>
+                <source type="image/webp"
+                  srcset="img/origami-crane-necklace-desktop@1x.webp 1x, img/origami-crane-necklace-desktop@2x.webp 2x">
+                <img src="img/origami-crane-necklace-desktop@1x.jpg"
+                  srcset="img/origami-crane-necklace-desktop@2x.jpg 2x" alt="Origami crane necklace" width="270"
+                  height="272">
+              </picture>
+              <h3>Origami crane necklace</h3>
+              <p>$ 105</p>
+            </a>
+          </li>
+          <li class="catalog-list__item page-catalog__item">
+            <a href="">
+              <picture>
+                <source type="image/webp"
+                  srcset="img/marble-earrings-desktop@1x.webp 1x, img/marble-earrings-desktop@2x.webp 2x">
+                <img src="img/marble-earrings-desktop@1x.jpg" srcset="img/marble-earrings-desktop@2x.jpg 2x"
+                  alt="Marble earrings" width="270" height="272">
+              </picture>
+              <h3>Marble earrings</h3>
+              <p>$ 95</p>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="page-catalog__nav">
+        <div class="container">
+          <div class="page-catalog__nav-wrapper">
+            <a class="page-catalog__button page-catalog__button--prev" href="" aria-label="Previous page">Previous</a>
+            <ul class="page-catalog__pagination-list list">
+              <li class="page-catalog__pagination-item page-catalog__pagination-item--current">
+                <a href="">1</a>
+              </li>
+              <li class="page-catalog__pagination-item">
+                <a href="">2</a>
+              </li>
+              <li class="page-catalog__pagination-item">
+                <a href="">3</a>
+              </li>
+              <li class="page-catalog__pagination-item">
+                <a href="">4</a>
+              </li>
+              <li class="page-catalog__pagination-item">
+                <a href="">5</a>
+              </li>
+            </ul>
+            <a class="page-catalog__button page-catalog__button--next" href="" aria-label="Next page">Next</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class=" page-footer">
+    <div class="container page-footer__container">
+      <div class="page-footer__email-box">
+        <h2>The good stuff in your inbox </h2>
+        <p>News and updates from CH. No spam, we promise.</p>
+        <form action="URL" method="POST">
+          <label class="visually-hidden" for="mail">Адрес электронной почты:</label>
+          <input id="mail" type="email" name="mail" placeholder="Your E-mail" required="">
+          <button type="submit">Sign Up</button>
+        </form>
+      </div>
+      <div class="page-footer__nav">
+        <ul class="page-footer__menu list">
+          <li class="page-footer__menu-item">
+            <a href="">Ordering & Payment</a>
+          </li>
+          <li class="page-footer__menu-item">
+            <a href="">Terms & Conditions</a>
+          </li>
+          <li class="page-footer__menu-item">
+            <a href="">Returns & Exchanges</a>
+          </li>
+          <li class="page-footer__menu-item">
+            <a href="">Delivery</a>
+          </li>
+        </ul>
+        <ul class="page-footer__info list">
+          <li class="page-footer__info-item">
+            <a href="">About CH</a>
+          </li>
+          <li class="page-footer__info-item">
+            <a href="">Stores & Hours</a>
+          </li>
+          <li class="page-footer__info-item">
+            <a href="">Jobs</a>
+          </li>
+          <li class="page-footer__info-item">
+            <a href="">Contact Us</a>
+          </li>
+        </ul>
+        <ul class="page-footer__links list">
+          <li class="page-footer__link page-footer__link--fb">
+            <a href="">Facebook</a>
+          </li>
+          <li class="page-footer__link page-footer__link--instagram">
+            <a href="">Instagram</a>
+          </li>
+          <li class="page-footer__link page-footer__link--pinterest">
+            <a href="">Pinterest</a>
+          </li>
+          <li class="page-footer__link page-footer__link--twitter">
+            <a href="">Twitter</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="js/main.js"></script>
+
+</body>
+
+</html>

@@ -7,6 +7,24 @@ const navToggle = navMain.querySelector(`.page-header__toggle`);
 
 const faqLinks = document.querySelectorAll(`.page-faq__link`);
 
+const catalogFieldsets = document.querySelectorAll(`.page-catalog__filter-fieldset`);
+
+const clearFilter = document.querySelector(`.page-catalog__filter-button--clear`);
+
+const getClearFilter = () => {
+  const filterInputs = document.querySelectorAll(`.page-catalog__filter-option input`);
+
+  clearFilter.addEventListener(`click`, () => {
+    Array.from(filterInputs).forEach((link) => {
+      link.checked = false;
+    });
+  });
+};
+
+if (catalogFieldsets !== null && clearFilter !== null) {
+  getClearFilter();
+}
+
 if (navMain !== null) {
   navMain.classList.remove(`page-header__inner--nojs`);
   navMain.classList.remove(`page-header__inner--closed-nojs`);
@@ -34,6 +52,22 @@ if (faqLinks !== null) {
       evt.preventDefault();
       link.classList.toggle(`page-faq__link--opened`);
       link.classList.toggle(`page-faq__link--closed`);
+    });
+  });
+}
+
+if (catalogFieldsets !== null) {
+  Array.from(catalogFieldsets).forEach((link) => {
+    const catalogFilterTitle = link.querySelector(`.page-catalog__filter-title`);
+
+    link.classList.remove(`page-catalog__filter-fieldset--opened`);
+    link.classList.remove(`page-catalog__filter-fieldset--opened-nojs`);
+    link.classList.add(`page-catalog__filter-fieldset--closed`);
+
+    catalogFilterTitle.addEventListener(`click`, (evt) => {
+      evt.preventDefault();
+      link.classList.toggle(`page-catalog__filter-fieldset--opened`);
+      link.classList.toggle(`page-catalog__filter-fieldset--closed`);
     });
   });
 }

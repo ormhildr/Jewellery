@@ -335,10 +335,27 @@
   font-size: 38px;
   font-weight: 400;
   font-style: italic;
-  text-transform: lowercase;
 
   @media (max-width: $mobile-width-max) {
     font-size: 34px;
+  }
+}
+
+.page-header__bottom-catalog {
+  padding-top: 102px;
+  padding-bottom: 96px;
+  background-image: url("../img/header-catalog@1x.jpg");
+
+  h2 {
+    margin-bottom: 15px;
+    font-size: 34px;
+  }
+  p {
+    font-size: 22px;
+  }
+
+  @media (min-resolution: 2dppx) {
+    background-image: url("../img/header-catalog@2x.jpg");
   }
 }
 
