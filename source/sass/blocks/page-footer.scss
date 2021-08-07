@@ -118,6 +118,11 @@
 
 .page-footer__nav a {
   color: $white-color;
+
+  &:hover,
+  &:active {
+    color: $search-color;
+  }
 }
 
 .page-footer__menu {

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Jewellery">
+  <title>Jewellery</title>
+  <link rel="icon" href="img/favicon.png" type="image/png" sizes="32x32">
+  <link rel="preload" href="fonts/cormorant-garamond-v10-latin-regular.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/cormorant-garamond-v10-latin-italic.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/cormorant-garamond-v10-latin-600.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/cormorant-garamond-v10-latin-700.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/poppins-v15-latin-regular.woff2" as="font" crossorigin>
+  <link rel="preload" href="fonts/poppins-v15-latin-500.woff2" as="font" crossorigin>
+  <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+  <section class="modal modal--active page-section">
+    <div class="modal__content">
+      <a href="index.html" aria-label="На главную страницу">
+        <picture>
+          <source type="image/webp"
+            srcset="img/sweet-ice-cream-desktop@1x.webp 1x, img/sweet-ice-cream-desktop@2x.webp 2x">
+          <img src="img/sweet-ice-cream-desktop@1x.jpg" srcset="img/sweet-ice-cream-desktop@2x.jpg 2x" alt="Gold chain"
+            width="430" height="138">
+        </picture>
+      </a>
+      <div class="modal__container">
+        <h2>Log In</h2>
+        <form action="https://echo.htmlacademy.ru" method="POST">
+          <div class="modal__form-field">
+            <label class="visually-hidden" for="modal-user-email">Your E-mail</label>
+            <input id="modal-user-email" name="email" type="email" placeholder="Your E-mail" required>
+          </div>
+          <div class="modal__form-field">
+            <label class="visually-hidden" for="modal-user-password">Номер телефона</label>
+            <input id="modal-user-password" name="password" type="password" placeholder="Password" required>
+          </div>
+          <a class="modal__password" href="">Forgot your password?</a>
+          <button class="modal__button" type="submit">Log In</button>
+          <div class="modal__registration">
+            <span>Don’t have an account?</span>
+            <a href="">Sign up</a>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="modal__overlay"></div>
+  </section>
+</body>
+
+</html>

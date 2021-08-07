@@ -11,5 +11,10 @@
 }
 
 .swiper-pagination-bullet {
+  color: $search-color;
   cursor: pointer;
+}
+
+.swiper-pagination-bullet-active {
+  color: $text-color;
 }

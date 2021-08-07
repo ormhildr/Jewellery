@@ -13,4 +13,9 @@
   margin: 0 auto;
   color: $text-color;
   border-bottom: 1px solid $mobile-header;
+
+  &:hover,
+  &:active {
+    color: $search-color;
+  }
 }

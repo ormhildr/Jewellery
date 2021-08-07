@@ -132,7 +132,7 @@
 .page-header__top {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 31px;
+  margin-bottom: 12px;
   font-size: 14px;
   line-height: 21px;
 
@@ -205,6 +205,11 @@
 
 .page-header__user a {
   color: $text-color;
+
+  &:hover,
+  &:active {
+    color: $search-color;
+  }
 }
 
 .page-header__logo {
@@ -251,10 +256,14 @@
 }
 
 .page-header__nav {
+  padding-top: 19px;
   padding-bottom: 19px;
+  border-top: 1px solid $grey-line-color;
 
   @media (max-width: $tablet-width-max) {
     padding-bottom: 75px;
+    padding-left: 45px;
+    border-top: none;
   }
 }
 
@@ -277,6 +286,11 @@
 
   @media (max-width: $tablet-width-max) {
     color: $white-color;
+  }
+
+  &:hover,
+  &:active {
+    color: $search-color;
   }
 }
 
@@ -356,6 +370,15 @@
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/header-catalog@2x.jpg");
+  }
+
+  @media (max-width: $mobile-width-max) {
+    padding-top: 87px;
+    padding-bottom: 86px;
+
+    p {
+      width: 77%;
+    }
   }
 }
 
