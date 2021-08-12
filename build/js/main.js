@@ -17,7 +17,7 @@ const filterOverlay = document.querySelector(`.page-catalog__filter-overlay`);
 
 const filterClose = document.querySelector(`.page-catalog__filter-close`);
 
-const modalFormOpened = document.querySelector(`.page-header__login`);
+const modalFormOpened = document.querySelectorAll(`.page-header__login`);
 const modalFormWindow = document.querySelector(`.modal-form`);
 const modalFormClosed = modalFormWindow.querySelector(`.modal__close`);
 const modalFormOverlay = modalFormWindow.querySelector(`.modal__overlay`);
@@ -68,7 +68,9 @@ const closeFormModal = () => {
 };
 
 if (modalFormWindow !== null && modalFormOpened !== null && modalFormClosed !== null && modalFormOverlay !== null) {
-  modalFormOpened.addEventListener(`click`, openFormModal);
+  Array.from(modalFormOpened).forEach((link) => {
+    link.addEventListener(`click`, openFormModal);
+  });
   modalFormClosed.addEventListener(`click`, closeFormModal);
   modalFormOverlay.addEventListener(`click`, closeFormModal);
 

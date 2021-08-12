@@ -8,7 +8,8 @@
   }
 
   @media (max-width: $mobile-width-max) {
-    padding-top: 70px;
+    padding-top: 65px;
+    padding-bottom: 54px;
   }
 }
 
@@ -90,5 +91,13 @@
 
   @media (max-width: $mobile-width-max) {
     max-width: 50px;
+  }
+
+  &--card {
+    margin-bottom: 55px;
+
+    @media(max-width: $tablet-width-max) {
+      margin-bottom: 10px;
+    }
   }
 }

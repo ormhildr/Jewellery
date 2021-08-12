@@ -35,6 +35,7 @@
   grid-template-rows: 230px 150px;
   row-gap: 34px;
   column-gap: 27px;
+  justify-content: center;
 
   @media (max-width: $tablet-width-max) {
     grid-template-columns: 133px 231px 133px 133px;

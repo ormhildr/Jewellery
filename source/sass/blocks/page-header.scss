@@ -24,6 +24,7 @@
       height: 100vh;
       overflow-y: scroll;
       background-color: $mobile-header;
+      z-index: 1;
 
       .page-header__logo {
         margin-bottom: 34px;
@@ -195,6 +196,9 @@
 }
 
 .page-header__user {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 116px;
   position: relative;
   top: 11px;
 
@@ -258,6 +262,7 @@
 .page-header__nav {
   padding-top: 19px;
   padding-bottom: 19px;
+  padding-left: 11px;
   border-top: 1px solid $grey-line-color;
 
   @media (max-width: $tablet-width-max) {
@@ -265,19 +270,35 @@
     padding-left: 45px;
     border-top: none;
   }
+
+  @media (max-width: $mobile-width-max) {
+    padding-left: 17px;
+    padding-top: 0;
+  }
+}
+
+.page-header__nav-item {
+  border-bottom: 1px solid $grey-line-color;
+
+  @media (max-width: $tablet-width-max) {
+    border-bottom: none;
+  }
 }
 
 .page-header__list {
   display: flex;
   flex-wrap: wrap;
-  margin: 0 auto;
-  max-width: 493px;
+  justify-content: center;
 
   @media (max-width: $tablet-width-max) {
     flex-direction: column;
     margin: 0;
     margin-bottom: 45px;
     font-size: 24px;
+  }
+
+  @media (max-width: $mobile-width-max) {
+    margin-bottom: 30px;
   }
 }
 
@@ -299,7 +320,7 @@
 
   @media (max-width: $tablet-width-max) {
     margin-right: 0;
-    margin-bottom: 32px;
+    margin-bottom: 34px;
   }
 }
 
@@ -330,7 +351,7 @@
   }
 }
 
-.page-header__bottom h2 {
+.page-header__bottom h1 {
   margin: 0;
   margin-bottom: 26px;
   font-size: 45px;
@@ -360,9 +381,13 @@
   padding-bottom: 96px;
   background-image: url("../img/header-catalog@1x.jpg");
 
-  h2 {
+  h1 {
     margin-bottom: 15px;
     font-size: 34px;
+
+    @media (max-width: $mobile-width-max) {
+      font-size: 32px;
+    }
   }
   p {
     font-size: 22px;
@@ -419,6 +444,10 @@
 
 .page-header__sub-nav {
   margin-bottom: 43px;
+
+  @media (max-width: $mobile-width-max) {
+    margin-bottom: 33px;
+  }
 }
 
 .page-header__sub-item {
