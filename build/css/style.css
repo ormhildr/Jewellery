@@ -636,6 +636,9 @@ body {
   display: flex;
   flex-wrap: wrap;
   max-width: 116px;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
   position: relative;
   top: 11px; }
   @media (max-width: 1023px) {
@@ -1615,6 +1618,10 @@ body {
   height: 15px;
   background-color: #a87b62; }
 
+.page-catalog__filter-list input:hover + label::before,
+.page-catalog__filter-list input:focus + label::before {
+  box-shadow: 0px 2px 10px 2px #a87b62; }
+
 .page-catalog__filter-option:not(:last-child) {
   margin-bottom: 6px; }
 
@@ -1643,7 +1650,7 @@ body {
   .page-catalog__filter-toggle::after {
     content: "";
     position: absolute;
-    top: -18px;
+    top: -23px;
     left: 0;
     width: 4px;
     height: 4px;
@@ -1793,7 +1800,7 @@ body {
 .modal__password {
   display: block;
   margin-bottom: 39px;
-  margin-left: 58%;
+  margin-left: auto;
   padding-top: 4px;
   max-width: -webkit-max-content;
   max-width: -moz-max-content;

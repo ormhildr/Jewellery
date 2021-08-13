@@ -198,6 +198,13 @@
   background-color: $mobile-header;
 }
 
+.page-catalog__filter-list input:hover + label,
+.page-catalog__filter-list input:focus + label {
+  &::before {
+    box-shadow: 0px 2px 10px 2px $mobile-header;
+  }
+}
+
 .page-catalog__filter-option {
   &:not(:last-child) {
     margin-bottom: 6px;
@@ -233,7 +240,7 @@
   &::after {
   content: "";
   position: absolute;
-  top: -18px;
+  top: -23px;
   left: 0;
   width: 4px;
   height: 4px;

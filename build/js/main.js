@@ -149,6 +149,13 @@ if (catalogFieldsets !== null) {
       link.classList.toggle(`page-catalog__filter-fieldset--opened`);
       link.classList.toggle(`page-catalog__filter-fieldset--closed`);
     });
+    catalogFilterTitle.addEventListener(`keydown`, function (evt) {
+      if (evt.keyCode === 13) {
+        evt.preventDefault();
+        link.classList.toggle(`page-catalog__filter-fieldset--opened`);
+        link.classList.toggle(`page-catalog__filter-fieldset--closed`);
+      }
+    });
   });
 }
 
