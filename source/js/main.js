@@ -86,8 +86,7 @@ if (modalFormWindow !== null && modalFormOpened !== null && modalFormClosed !== 
   const form = modalFormWindow.querySelector(`form`);
   const formMail = form.querySelector(`input[name=email]`);
 
-  form.addEventListener(`submit`, (evt) => {
-    evt.preventDefault();
+  form.addEventListener(`submit`, () => {
     localStorage.setItem(`email`, formMail.value);
   });
 }
@@ -139,7 +138,7 @@ if (faqLinks !== null) {
 
 if (catalogFieldsets !== null) {
   Array.from(catalogFieldsets).forEach((link) => {
-    const catalogFilterTitle = link.querySelector(`.page-catalog__filter-title`);
+    const catalogFilterTitle = link.querySelector(`h3`);
 
     link.classList.remove(`page-catalog__filter-fieldset--opened`);
     link.classList.remove(`page-catalog__filter-fieldset--opened-nojs`);

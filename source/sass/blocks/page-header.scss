@@ -163,7 +163,6 @@
 .page-header__top input {
   border: none;
   outline: none;
-  color: $search-color;
 
   @media (max-width: $tablet-width-max) {
     padding-left: 50px;
@@ -336,6 +335,7 @@
   font-family: "Cormorant Garamond", "Times", serif;
   color: $white-color;
   background-color: $mobile-header;
+  text-align: center;
 
   @media (min-resolution: 2dppx) {
     background-image: url("../img/header-main-desktop@2x.jpg");
@@ -459,4 +459,3 @@
     opacity: 0.8;
   }
 }
-

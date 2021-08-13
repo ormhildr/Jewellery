@@ -10,6 +10,7 @@
 
   @media (max-width: $mobile-width-max) {
     padding-top: 43px;
+    padding-bottom: 62px;
   }
 }
 
@@ -127,35 +128,41 @@
 
 .page-footer__menu {
   display: grid;
-  grid-template-columns: auto;
+  grid-template-columns: auto auto;
   grid-column-gap: 75px;
   grid-row-gap: 18px;
-  margin-right: 75px;
+  margin-right: 136px;
 
   @media (max-width: $tablet-width-max) {
     grid-column-gap: 87px;
-    margin-right: 87px;
+    margin-right: 115px;
   }
 
   @media (max-width: $mobile-width-max) {
+    grid-template-columns: auto;
     margin-right: 0;
     margin-bottom: 39px;
   }
 }
 
-.page-footer__info {
-  display: grid;
-  grid-template-columns: auto;
-  grid-row-gap: 18px;
-  margin-right: 136px;
+.page-footer__menu-item {
+  @media(max-width: $mobile-width-max) {
+    &--about {
+      order: 1;
+    }
+    &--stores {
+      order: 2;
+    }
+    &--jobs {
+      order: 3;
+    }
+    &--contact {
+      order: 4;
+    }
 
-  @media (max-width: $tablet-width-max) {
-    margin-right: 115px;
-  }
-
-  @media (max-width: $mobile-width-max) {
-    margin-right: 0;
-    margin-bottom: 41px;
+    &--delivery {
+      margin-bottom: 22px;
+    }
   }
 }
 
